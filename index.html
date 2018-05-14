@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon Wars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div  class="modal ">
+
+
+    <div class="modal-content">
+
+        <div class="modalFlex">
+            <div class="modalName"></div>
+            <div class="pokemon-row hide">
+                <div class="pokemon1" data-target="0"></div>
+                <div class="pokemon2" data-target="1"></div>
+                <div class="pokemon3" data-target="2"></div>
+            </div>
+
+            <div class="playerinput">
+                <div>
+                    <input class="input-field" type="text">
+                     <div class="input-button"></div>
+                </div>
+            </div>
+            <div class="direction animated10s  fadeInUp infinite">Click Pokeball to continue...</div>
+
+            <div class="modal_text">Player 1 what is your name?</div></div>
+    </div>
+
+</div>
+
+<div class="content hide">
+    <div class="LeftGamePly ">
+        <div class="NameGame">
+           <div class="GameTitle"></div>
+            <div class="stats">
+            <div class="Gameplayed">Game:<span class="gameAmount">1</span></div>
+            <div class="Player1">
+                <div class="player1Name">Player 1</div>
+                <div class="health">Health: <span class="health1">100</span>%</div>
+                <div class="pokemonAnimation1"></div>
+                <div>Games Won:<span class="GamesWon1">0</span></div>
+
+            </div>
+            <div class="Player2">
+                <div class="player2Name">Player 2</div>
+                <div class="health">Health: <span class="health2">100</span>%</div>
+                <div class="pokemonAnimation2 "></div>
+                <div >Games Won:<span class="GamesWon2">0</span></div>
+            </div>
+        </div>
+        </div>
+        <div class="BottomGameplay">
+            <div class="accuracyDiv"><span class="currentPlayer">Player 1</span>'s  Accuracy <span class="accuracy">0</span>%</div>
+            <div class="buttonReset"><button class="btn btn-outline-danger btn-lg reset">Reset</button></div>
+            <div class="about">About</div>
+        </div>
+    </div>
+    <div class="gameArea ">
+
+    </div>
+</div>
+
+<div class="aboutModal hide">
+    <div class="aboutContent">
+        <div class="aboutInnerContent">This page was made by Martin Rizo with html,css,javascript and jquery.</div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

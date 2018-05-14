@@ -1,0 +1,520 @@
+body{
+    width:100vw;
+    height:100vh;
+    font-family: 'Press Start 2P', cursive;
+    color:rgba(242, 242, 242);
+    background:url("../images/pokemon.jpg");
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+
+}
+.pokemon-row{
+    position: absolute;
+
+     top:40%;
+    left:17%;
+    width:70%;
+    height: 25%;
+
+
+
+}
+.centerPokemonImg{
+    position: absolute;
+
+    bottom: 30%;
+    left: 30%;
+}
+.pokemonAnimation1{
+    transform: scaleX(-1);
+    height:50%;
+}
+.pokemonAnimation2{
+    height: 50%;
+}
+.health{
+    margin-bottom: 20px;
+}
+.pokemon1{
+    border:1px solid #f2f2f2;
+    width:30%;
+    height:100%;
+    background: url("../images/ArcanineGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    opacity:1;
+    display:inline-block;
+}
+.pokemon1:hover,.pokemon2:hover, .pokemon3:hover{
+
+    border:2px solid #f2cb05 ;
+}
+.pokemon2{
+    border:1px solid #f2f2f2;
+    width:30%;
+    height:100%;
+    background: url("../images/CharizardGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    opacity:1;
+    display:inline-block;
+
+}
+.pokemon3{
+    border:1px solid #f2f2f2;
+    width:30%;
+    height:100%;
+    background: url("../images/MoltresGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    opacity:1;
+    display:inline-block;
+}
+.modal{
+
+    width:100%;
+    height: 100%;
+    display: block;
+    background-color:  rgba(0,0,0,1);
+}
+.modal-content{
+    position: absolute;
+    top:10%;
+    left:15%;
+    width:70%;
+    height: 80%;
+    background-color:  rgba(0,0,0,1);
+
+}
+
+.modalPlayerTurn{
+    height: 85%;
+    position: absolute;
+    top:10%;
+    left:15%;
+    width:70%;
+    background-color:  rgba(0,0,0,1);
+}
+
+.modalPlayerPokemonBox{
+    position: absolute;
+    top: 7%;
+    left: 12%;
+    width: 70%;
+    height: 60%;
+}
+.modalPokemon1{
+
+    width: 70%;
+    height: 70%;
+    background: url("../images/ArcanineGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    opacity: 1;
+    display: inline-block;
+}
+.modalPokemon2{
+    width: 70%;
+    height: 70%;
+    background: url("../images/CharizardGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    opacity: 1;
+    display: inline-block;
+}
+.modalPokemon3{
+    width: 70%;
+    height: 70%;
+    background: url("../images/MoltresGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    opacity: 1;
+    display: inline-block;
+}
+.modalPlayerText{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0%;
+    left: -1%;
+    font-size: 46px;
+}
+
+.playerWon{
+    top: 80%;
+    position: absolute;
+    left: 37%;
+
+}
+.LeftGamePly{
+    width:33vw;
+
+    height:100vh;
+
+    position: absolute;
+    top:0;
+
+}
+.modalName{
+    position: absolute;
+   top:10%;
+    left:35%;
+    width:35%;
+    height:5em;
+    background: url("../images/memoryBattle35.png");
+    background-repeat: no-repeat;
+}
+.playerinput{
+
+    position: absolute;
+    width:40%;
+    height:4.375em;
+    top:45%;
+    left:30%;
+}
+.direction{
+    width:100%;
+    position: absolute;
+    top:70%;
+    text-align: center;
+    font-size: 1.250em
+}
+.modal_text{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:30%;
+    left:0%;
+    font-size: 1.688em;
+}
+.input-field {
+    width: 21.875em;
+    display: inline-block;
+    color: rgba(0,0,0);
+    text-align: center;
+    font-size: 1.125em;
+    background-color: #f2f2f2;
+    padding: .9em 1.4em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 1.875em;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
+    position: absolute;
+
+    left:10%
+}
+
+
+
+
+.input-button{
+    width: 3.750em;
+    height: 4.375em;
+    border: none;
+    text-indent: -9999px;
+    opacity: 95;
+    background-color: yellow;
+    background: url("../images/pokeball.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 1px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+
+    cursor: pointer; /* for demo only */
+    display: inline-block;
+    position: absolute;
+
+    right:-2%;
+    bottom:2%
+}
+.GameTitle{
+    margin:10px auto 0px auto;
+    width:65%;
+    height:5.000em;
+    background: url("../images/memoryBattle30.png");
+    background-repeat: no-repeat;
+}
+.stats{
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+.Gameplayed{
+    text-align: center;
+    margin-bottom: 0.625em;
+}
+.Player1{
+    text-align: center;
+    top:25%;
+    left:1.250em;
+    width: 45%;
+    height: 80%;
+    display: inline-block;
+    position: absolute;
+
+}
+.Player2{
+    position: absolute;
+    top:25%;
+    right:1.250em;
+    text-align: center;
+    width:45%;
+    height: 80%;
+    display: inline-block;
+}
+.NameGame{
+
+    position: absolute;
+    background-color: rgba(43,68,140,0.8);
+    top:0.625em;
+    left:0.313em;
+    border-radius: 0.625em;
+    width: 100%;
+    height: 48%;
+}
+.BottomGameplay{
+    position: absolute;
+    top:50%;
+    left:0.313em;
+    width:100%;
+    height: 48%;
+    background-color:rgba(0,0,0,0.7);
+    border-radius: 0.625em;
+    text-align: center;
+}
+
+.accuracyDiv{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    font-size: 18px;
+}
+
+.buttonReset{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+
+}
+
+.about{
+    position: absolute;
+    top: 77%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+.about a{
+    color:white;
+}
+.content{
+
+    position: absolute;
+    width:100vw;
+    top:0;
+    right:0;
+    height:100vh;
+
+}
+
+.aboutModal{
+    position: fixed;
+    display: block;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+.aboutContent{
+    position: absolute;
+    width: 70%;
+    height:65%;
+    top:20%;
+    left:15%;
+    background-color: rgba(43,68,140,0.8);
+    padding:60px;
+    text-align: center;
+}
+.aboutInnerContent{
+    font-size: 30px;
+    position: absolute;
+    top:40%;
+}
+.gameArea{
+    position: absolute;
+    top:0;
+    right:0;
+    width:67%;
+    height:100%;
+    overflow: hidden;
+    padding:1.250em 0em 0.313em 0.938em;
+
+
+
+}
+.cards{
+    position: relative;
+    border-radius:0.625em;
+    margin:0em 0.375em;
+
+    display: inline-block;
+    width:15%;
+    background-color:none;
+    height:32%;
+
+}
+
+.opacity{
+    opacity: 0.5;
+}
+.backCardBlue{
+    border:3px solid rgba(16,58,144);
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 10px rgba(16,58,144);
+}
+.backCardRed{
+    border:2px solid rgba(204,0,0);
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 10px rgba(204,0,0);
+}
+.backCardImg{
+
+    position: absolute;
+    top:25%;
+    left: 25%;
+    background: url("../images/pokeball.png");
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.frontCard{
+    background-color: rgba(242,183,5,.95);
+}
+.frontCardImg{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height: 100%;
+    border:2px solid rgba(0,0,0,0.9);
+    border-radius: 10px;
+
+}
+.hide{
+    display: none;
+}
+.arcanine{
+    background: url("../images/arcanine.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.charzard{
+    background: url("../images/charzard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.moltres{
+    background:url("../images/moltres.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.pickacu{
+    background: url("../images/pickacu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+}
+.squirtle{
+    background: url("../images/Squirtle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+}
+.sandshrew{
+    background: url("../images/sandshrew.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+.bulbasaur{
+    background: url("../images/bulbasaur.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
+
+}
+.psyduck{
+    background: url("../images/Psyduck.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.magikarp{
+    background: url("../images/Magikarp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.animateds {
+    -webkit-animation-duration: 1s;
+    animation-duration: 700ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated1s {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated10s {
+    -webkit-animation-duration: 1s;
+    animation-duration: 10000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated2s{
+    -webkit-animation-duration: 1s;
+    animation-duration: 600ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: 3;
+}
+
+.animated10s.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated2s.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.animated5s.infinite{
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+
