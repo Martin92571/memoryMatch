@@ -10,6 +10,7 @@ var indexClick={
     firstClick:null,
     secondClick:null,
 };
+var soundToggle=false;
 var victory=new Audio("victory.mp3");
 var theme=new Audio("theme.mp3");
 var playerColor=["backCardBlue","backCardRed"];
@@ -38,6 +39,8 @@ function initializeGame(){
     $(".pokemon-row > div").on("click", modalInput);
     $(".reset").on("click",reset);
     $(".about").on("click",about);
+  
+    $(".toggleSound").on("click", toggleSound);
 
 }
 
@@ -85,14 +88,14 @@ function modalInput() {
             shufflePokemon(players[currentPlayer].pokemonShuffle);
             currentPlayer--;
             playerBoard();
-
+            toggleSound();
             break;
     }
 
 }
 function playerBoard() {
-    theme.play();
-    theme.volume=0.055;
+    
+    
     if(players[currentPlayer].playersFirstTurn){
             for(var x=0;x<players[currentPlayer].pokemonShuffle.length;x++) {
                 players[currentPlayer].pokemonShuffle[x].flipped = true;
@@ -107,6 +110,16 @@ function playerBoard() {
         }
         populateBoard(players[currentPlayer].pokemonShuffle);
     }
+}
+function toggleSound(){
+if(!soundToggle){
+    soundToggle=true;
+    theme.play();
+    theme.volume=0.85;
+}else{
+    soundToggle=false;
+    theme.pause();
+ }
 }
 function pickPlayerName(playerID){
     $(".input-field").val("");
