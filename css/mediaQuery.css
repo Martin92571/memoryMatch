@@ -14,7 +14,7 @@
         justify-content: space-evenly;
     }
     .nameContainer{
-        height: 10%;
+        height: 12%;
     }
     .modalName{
         background-size:100%;
@@ -24,10 +24,12 @@
     }
     .modal_text{
       font-size: 0.91em;
+      color:#fff;
     }
     .direction{
         font-size:0.91em;
         margin-top:5px;
+        color:#fff;
     }
     .playerinput{
      width:100%;
