@@ -10,12 +10,8 @@ body{
 
 }
 .pokemon-row{
-    position: absolute;
-
-     top:40%;
-    left:17%;
-    width:70%;
-    height: 25%;
+  
+    height: 30vh;
 
 
 
@@ -80,13 +76,15 @@ body{
     height: 100%;
     display: block;
     background-color:  rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .modal-content{
-    position: absolute;
-    top:10%;
-    left:15%;
-    width:70%;
-    height: 80%;
+    
+    width:90%;
+   
     background-color:  rgba(0,0,0,1);
 
 }
@@ -147,6 +145,13 @@ body{
     font-size: 46px;
 }
 
+.modalFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 .playerWon{
     top: 80%;
     position: absolute;
@@ -163,9 +168,7 @@ body{
 
 }
 .modalName{
-    position: absolute;
-   top:10%;
-    left:35%;
+   
     width:35%;
     height:5em;
     background: url("../images/memoryBattle35.png");
@@ -173,25 +176,22 @@ body{
 }
 .playerinput{
 
-    position: absolute;
+  
     width:40%;
     height:4.375em;
-    top:45%;
-    left:30%;
+   
 }
 .direction{
     width:100%;
-    position: absolute;
-    top:70%;
+   
     text-align: center;
     font-size: 1.250em
 }
 .modal_text{
-    position: absolute;
+    
     width:100%;
     text-align: center;
-    top:30%;
-    left:0%;
+    
     font-size: 1.688em;
 }
 .input-field {
@@ -211,9 +211,7 @@ body{
     -webkit-transition: all .1s linear;
     -moz-transition: all .1s linear;
     transition: all .1s linear;
-    position: absolute;
-
-    left:10%
+  
 }
 
 
@@ -235,10 +233,7 @@ body{
 
     cursor: pointer; /* for demo only */
     display: inline-block;
-    position: absolute;
-
-    right:-2%;
-    bottom:2%
+   
 }
 .GameTitle{
     margin:10px auto 0px auto;

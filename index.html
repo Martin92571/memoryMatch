@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>Pokemon Wars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
 
 </head>
 <body>
@@ -17,7 +19,10 @@
     <div class="modal-content">
 
         <div class="modalFlex">
-            <div class="modalName"></div>
+            <div class="nameContainer">
+                <div class="modalName"></div>
+            </div>
+            <div class="modal_text">Player 1 what is your name?</div>
             <div class="pokemon-row hide">
                 <div class="pokemon1" data-target="0"></div>
                 <div class="pokemon2" data-target="1"></div>
@@ -25,14 +30,14 @@
             </div>
 
             <div class="playerinput">
-                <div>
+                <div class="inputItems">
                     <input class="input-field" type="text">
                      <div class="input-button"></div>
                 </div>
             </div>
             <div class="direction animated10s  fadeInUp infinite">Click Pokeball to continue...</div>
 
-            <div class="modal_text">Player 1 what is your name?</div></div>
+            </div>
     </div>
 
 </div>
