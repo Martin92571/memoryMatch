@@ -67,9 +67,9 @@
     }
     .LeftGamePly{
         position: relative;
-        height: 35%;
+        height: 38%;
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         background-color: rgba(43,68,140,0.8);
     }
     .BottomGameplay{
@@ -82,15 +82,31 @@
         height: 60%;
         overflow: visible;
         margin:auto;
-        padding:0;
+       padding:0.2em 0em 0.313em 0.938em;
        
     }
     .content{
         position: relative;
     }
     .cards{
-        margin: 0em 0.075em;
+        margin: 0em 0.095em;
         height: 31%;
-        width: 16%;
+        width: 15%;
+    }
+    .GameTitle {
+        height:45%;
+        background-size: 100%;
+    }
+    .stats{
+        font-size: 0.6em;
+    }
+    .centerPokemonImg{
+    bottom: 0;
+    }
+    .pokemonAnimation1{
+        height: 100%;
+    }
+    .pokemonAnimation2{
+        height: 100%;
     }
 }

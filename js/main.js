@@ -140,13 +140,18 @@ function pickPokemonModal(Player) {
 function populateGameData(playerID,currentPlayer,playerPokemon){
 
     $(playerID).text(players[currentPlayer].name);
-    $(playerPokemon).append($("<a>",{
-        href:selectedPokemon[players[currentPlayer].pokemon].href
-    }).append($("<img>",{
-        src:selectedPokemon[players[currentPlayer].pokemon].src,
-        class:"centerPokemonImg"
-    })));
-    $
+    if($(window).width()>=700){
+    $(playerPokemon).append($("<div>",{
+
+        class:"centerPokemonImg "+selectedPokemon[players[currentPlayer].pokemon].class
+    }));
+}else{
+    $(playerPokemon).append($("<div>",{
+
+        class:selectedPokemon[players[currentPlayer].pokemon].class
+    }));
+}
+    
 
 }
 function shufflePokemon(array) {
