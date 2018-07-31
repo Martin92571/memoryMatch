@@ -177,7 +177,39 @@
 
 
 }
-
+@media only screen and (max-height: 380px) {
+    .modalName{
+        background-size: 100%;
+        margin:auto;
+        width:65%;
+    }
+    .modal_text {
+       
+        font-size: 0.688em;
+    }
+    .input-field{
+        padding: 0.5em 1.4em;
+        width: 15.875em;
+        margin: 0.3em;
+    }
+    .inputItems{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+    .playerinput {
+        width: 100%;
+        height: 6.375em;
+        margin-bottom: 1em;
+    }
+    .direction{
+        font-size: 0.5em;
+        margin-top: 0.7em;
+    }
+  
+}
 @media only screen and (max-width: 1440px) and (min-width: 700px) {
    
  
