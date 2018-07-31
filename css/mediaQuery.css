@@ -1,7 +1,7 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) and (orientation :portrait) {
     body{
-        width: 99vw;
-        height: 99vh;
+        width: 100vw;
+        height: 100vh;
     }
     .modalFlex {
         
@@ -48,6 +48,7 @@
     }
     .input-field{
      width:100%;
+     
     }
     .input-button{
         margin-top:20px;
@@ -67,7 +68,7 @@
         display: block;
         background-color: rgba(43,68,140,0.8);
         text-align: center;
-        height: 13%;
+        height: 15%;
         margin-top: 5px;
         width: 100%;
     }
@@ -107,6 +108,7 @@
     .GameTitle {
         height: 50%;
         background-size: 85%;
+        margin:auto;
     }
     .stats{
         font-size: 0.6em;
@@ -150,6 +152,195 @@
     .mobile_buttonReset{
         display: inline-block;
     }
-  
+   .landscape{
+      display: none;
+    }
 
+}
+@media only screen and (max-width: 1000px) and (orientation :landscape){
+.landscape{
+    display: block;
+    z-index: 1100;
+   
+ }
+ .change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+ }
+
+
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 700px) {
+   
+ 
+.modalFlex {
+    
+    height: 100%;
+}
+.modal-content {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,1);
+}
+.modalFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nameContainer{
+    height: 12%;
+}
+.modalName{
+    background-size:100%;
+    width:80%;
+    margin:0 auto;
+    height: 100%;
+}
+.modal_text{
+  font-size: 1.51em;
+  color:#fff;
+}
+.direction{
+    font-size:1.51em;
+    margin-top:5px;
+    color:#fff;
+}
+.playerinput{
+ width:100%;
+ height: 8.375em;
+ 
+}
+.inputItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-field{
+    width:70%;
+    padding:1.2em 1.4em;
+    
+}
+.input-button{
+    margin-top:20px;
+    width: 4.75em;
+    height: 5.375em;
+    
+
+}
+.pokemon1{
+ width:29%;
+}
+.pokemon2{
+    width:30%;
+}
+.pokemon3{
+    width:29%;
+}
+.mobile_BottomGameplay{
+    display: block;
+    background-color: rgba(43,68,140,0.8);
+    text-align: center;
+    height: 15%;
+    margin-top: 5px;
+    width: 100%;
+}
+.NameGame{
+    position: relative;
+}
+.LeftGamePly{
+    position: relative;
+    height: 28%;
+    width: 100%;
+    margin-bottom: 0.4em;
+    background-color: rgba(43,68,140,0.8);
+}
+.BottomGameplay{
+    display: none;
+}
+.gameArea {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    overflow: visible;
+    margin: auto;
+    padding: 1.2em 0em 0.013em 2.938em;
+   
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    margin: 0em 0.095em;
+    height: 31%;
+    width: 15%;
+}
+.GameTitle {
+    height: 50%;
+   
+    background-size: 75%;
+    margin: auto;
+    width: 60%;
+}
+.stats{
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
+.centerPokemonImg{
+bottom: 0;
+}
+.Player1{
+    height: 100%;
+}
+.Player2{
+    height: 100%;
+}
+.pokemonAnimation1{
+    height: 91%;
+}
+.pokemonAnimation2{
+    height: 91%;
+}
+.health{
+    margin-bottom: 0;
+}
+.modalPokemon1 {
+    height: 100%;
+}
+.modalPokemon2 {
+    height: 100%;
+}
+.modalPokemon3 {
+    height: 100%;
+}
+.mobile_accuracyDiv{
+    padding-top: 10px;
+    font-size: 1.5em;
+    margin-top: 0.575em;
+
+}
+.reset{
+    font-size: .75rem;
+}
+.toggleSound{
+    font-size: .575rem;
+}
+.mobile_buttonReset{
+    display: inline-block;
+}
+.landscape{
+  display: none;
+}
+.mobile_about{
+    margin-top:0.5em;
+ }
+    
 }

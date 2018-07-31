@@ -16,12 +16,23 @@ body{
 
 
 }
-.centerPokemonImg{
+
+.landscape{
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,1);
+    color:rgba(256,256,256,10);
+}
+/* .centerPokemonImg{
     position: absolute;
 
     bottom: 30%;
     left: 30%;
-}
+} */
 .pokemonAnimation1{
     transform: scaleX(-1);
     height:50%;
