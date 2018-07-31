@@ -2,6 +2,7 @@
     body{
         width: 100vw;
         height: 100vh;
+        color:#fff;
     }
     .modalFlex {
         
@@ -178,6 +179,9 @@
 
 }
 @media only screen and (max-height: 380px) {
+    body{
+        color:#fff;
+    }
     .modalName{
         background-size: 100%;
         margin:auto;
@@ -211,7 +215,9 @@
   
 }
 @media only screen and (max-width: 1440px) and (min-width: 700px) {
-   
+   body{
+       color:#fff;
+   }
  
 .modalFlex {
     
