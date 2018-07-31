@@ -65,10 +65,12 @@
         width:29%;
     }
     .mobile_BottomGameplay{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         background-color: rgba(43,68,140,0.8);
         text-align: center;
-        height: 15%;
+        height: 16%;
         margin-top: 5px;
         width: 100%;
     }
@@ -157,7 +159,7 @@
     }
 
 }
-@media only screen and (max-width: 1000px) and (orientation :landscape){
+@media only screen and (min-width: 700px) and (orientation :landscape){
 .landscape{
     display: block;
     z-index: 1100;
@@ -244,10 +246,12 @@
     width:29%;
 }
 .mobile_BottomGameplay{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: rgba(43,68,140,0.8);
     text-align: center;
-    height: 15%;
+    height: 16%;
     margin-top: 5px;
     width: 100%;
 }
