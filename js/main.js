@@ -36,7 +36,7 @@ var selectedPokemon=[{ class:"modalPokemon1",src:"https://img.pokemondb.net/spri
 
 function initializeGame(){
     $(".input-field").keydown(function(e){
-       if(e.key == "Enter"||e.key==13||e.key)
+       if(e.key == 229 ||e.key==13 || e.key=="Enter")
        {
          modalInput();
        }
