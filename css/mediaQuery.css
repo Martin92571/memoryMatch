@@ -160,7 +160,7 @@
     }
 
 }
-@media only screen and (min-width: 500px) and (orientation :landscape){
+@media only screen and (min-width: 500px) and (max-width: 1000px)and (orientation :landscape){
 .landscape{
     display: block;
     z-index: 1100;
@@ -214,7 +214,7 @@
     }
   
 }
-@media only screen and (max-width: 1440px) and (min-width: 700px) {
+@media only screen and (max-width: 1100px) and (min-width: 700px) and (orientation :portrait) {
    body{
        color:#fff;
    }
@@ -385,4 +385,40 @@ bottom: 0;
     margin-top:0.5em;
  }
     
+}
+
+@media only screen and (min-width: 1100px){
+    .GameTitle {
+       
+        width: 50%;
+        height: 3em;
+       
+        background-size: 100%;
+    }
+    .nameContainer{
+        margin: auto;
+         width: 100%;
+    }
+    
+    .modalName {
+        width: 40%;
+        margin:auto;
+        height: 10em;
+        
+        background-size: 100%;
+    }
+    .playerinput{
+        display: flex;
+    align-content: center;
+    justify-content: center;
+    width:50%;
+    margin: auto;
+    }
+    .inputItems{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 11em;
+    }
 }
