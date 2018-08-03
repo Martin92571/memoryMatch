@@ -525,7 +525,27 @@ body{
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
+.firstPeak{
+    background-image: url("../images/iconspokemon.png");
+}
+.secondPeak{
+    background-image: url("../images/iconspokemon.png");
+}
 
+.sneakPeak{
+    width: 35%;
+    height: 30%;
+    margin: -10px auto;
+}
+.Peak{
+    width: 25%;
+    height: 100%;
+    background-image: url(../images/iconspokemon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
 
 
 

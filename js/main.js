@@ -25,8 +25,8 @@ var pokemons=[
 
 
 var players = [
-    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)},
-    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)}
+    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)},
+    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)}
 ]
 var selectedPokemon=[{ class:"modalPokemon1",src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/arcanine.gif"},
     {class:"modalPokemon2", src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/charizard.gif"},
@@ -40,7 +40,7 @@ function initializeGame(){
     $(".pokemon-row > div").on("click", modalInput);
     $(".reset").on("click",reset);
     $(".about").on("click",about);
-  
+    $(".sneakPeak").on("click" ,".Peak",sneakPeak);
     $(".toggleSound").on("click", toggleSound);
 
 }
@@ -61,12 +61,16 @@ function modalInput() {
             break;
         case 'getPlayer1Pokemon':
             $(this).css("border","4px solid blue");
-            players[currentPlayer].pokemon = parseInt($(this).attr('data-target'));
-            pickPlayerName("Player 2");
-            currentState = 'getPlayer2Name';
-            populateGameData(".player1Name",currentPlayer,".pokemonAnimation1");
-            shufflePokemon(players[currentPlayer].pokemonShuffle);
-            currentPlayer++;
+            setTimeout(()=>{
+                players[currentPlayer].pokemon = parseInt($(this).attr('data-target'));
+                pickPlayerName("Player 2");
+                currentState = 'getPlayer2Name';
+                populateGameData(".player1Name",currentPlayer,".pokemonAnimation1");
+                shufflePokemon(players[currentPlayer].pokemonShuffle);
+                currentPlayer++;
+            },500)
+            
+           
             break;
         case 'getPlayer2Name':
             if ($(".input-field").val() == "") {
@@ -83,40 +87,26 @@ function modalInput() {
 
             $(this).css("border","4px solid red");
             players[currentPlayer].pokemon = parseInt($(this).attr('data-target'));
-            $(".modal").hide();
-            $(".content").removeClass('hide');
-            populateGameData(".player2Name",currentPlayer,".pokemonAnimation2");
-            shufflePokemon(players[currentPlayer].pokemonShuffle);
-            currentPlayer--;
-            playerBoard();
-            toggleSound();
+            setTimeout(()=>{
+                $(".modal").hide();
+                $(".content").removeClass('hide');
+                populateGameData(".player2Name",currentPlayer,".pokemonAnimation2");
+                shufflePokemon(players[currentPlayer].pokemonShuffle);
+                currentPlayer--;
+                playerBoard();
+                toggleSound();
+            },500);
+            
             break;
     }
 
 }
-function playerBoard() {
-    
-    
-    if(players[currentPlayer].playersFirstTurn){
-            for(var x=0;x<players[currentPlayer].pokemonShuffle.length;x++) {
-                players[currentPlayer].pokemonShuffle[x].flipped = true;
-            }
-        players[currentPlayer].playersFirstTurn = false;
-        populateBoard(players[currentPlayer].pokemonShuffle);
-        setTimeout(playerBoard,900);
 
-    }else{
-        for(var i=0;i<players[currentPlayer].pokemonShuffle.length;i++) {
-            players[currentPlayer].pokemonShuffle[i].flipped = false;
-        }
-        populateBoard(players[currentPlayer].pokemonShuffle);
-    }
-}
 function toggleSound(){
 if(!soundToggle){
     soundToggle=true;
     theme.play();
-    theme.volume=0.85;
+    theme.volume=0.005;
 }else{
     soundToggle=false;
     theme.pause();
@@ -136,6 +126,24 @@ function pickPokemonModal(Player) {
     $(".direction").text("Select Your Pokemon");
     $(".playerinput").addClass("hide");
     $(".pokemon-row").css("display","block");
+}
+function playerBoard() {
+    
+    
+    if(players[currentPlayer].playersFirstTurn){
+            for(var x=0;x<players[currentPlayer].pokemonShuffle.length;x++) {
+                players[currentPlayer].pokemonShuffle[x].flipped = true;
+            }
+        players[currentPlayer].playersFirstTurn = false;
+        populateBoard(players[currentPlayer].pokemonShuffle);
+        setTimeout(playerBoard,2000);
+
+    }else{
+        for(var i=0;i<players[currentPlayer].pokemonShuffle.length;i++) {
+            players[currentPlayer].pokemonShuffle[i].flipped = false;
+        }
+        populateBoard(players[currentPlayer].pokemonShuffle);
+    }
 }
 
 function populateGameData(playerID,currentPlayer,playerPokemon){
@@ -222,8 +230,11 @@ function firstCard(location){
         first_card_clicked=null;
         indexClick.firstClick=null;
         return;
+    }else{
+        first_card_clicked.flipped=true;
+        flip(location,first_card_clicked);
     }
-    flip(location,first_card_clicked);
+    
 }
 
 function secondCard(location){
@@ -269,10 +280,10 @@ function playerTurnScreen(){
 
     $(".modal").html("");
     currentPlayer=-currentPlayer +1;
-
+    
     var modalPlayerText=$("<div>",{class:"modalPlayerText",
         text:players[currentPlayer].name+"'s Turn"
-    });
+    }); 
     var modalContainer=$("<div>",{class:"modalPlayerTurn"});
     var innerModalContainer=$("<div>",{class:"modalPlayerPokemonBox "+selectedPokemon[players[currentPlayer].pokemon].class});
     $(modalContainer).append(modalPlayerText);
@@ -280,15 +291,15 @@ function playerTurnScreen(){
     $(".modal").append(modalContainer);
     $(".modal").show();
     $(".modal").addClass("animated slideInDown");
-
+    
     var nextPlayer=setTimeout(function(){
         resetVariables();
-    },2450);
+    },1550);
 
 
     var hideModalTimer=setTimeout(function(){
        $(".modal").hide();
-    },2500);
+    },1600);
 }
 function pickachuCheck(){
     if(first_card_clicked.number==4 && second_card_clicked.number==4){
@@ -379,28 +390,74 @@ function flip(cardBeingFlipped,index){
 
 
 }
+function unFlipPeak(flipback,flipTrueCheck){
+      
+        if(!flipTrueCheck){
+            $(flipback).addClass(`${playerColor[currentPlayer]} animateds flipInY`);
+            $(flipback).children().removeClass().addClass("backCardImg");
+            $(flipback).removeClass("frontCard");
+        };
+    }
 function unFlip() {
-
+first_card_clicked.flipped=false;
 var card=".gameArea .cards:nth-child(";
 var card1=card+(indexClick.firstClick+1)+")";
 var card2=card+(indexClick.secondClick+1)+")";
-$(card1).removeClass("frontCard animateds flipInY");
-$(card2).removeClass("frontCard animateds flipInY");
-$(card1).children().removeClass().addClass("backCardImg");
-$(card2).children().removeClass().addClass("backCardImg ");
-$(card1).addClass(playerColor[currentPlayer]);
-$(card2).addClass(playerColor[currentPlayer]);
+    $(card1).removeClass("animateds flipInY");
+    $(card2).removeClass("animateds flipInY");
+
+setTimeout(()=>{
+    $(card1).addClass(`${playerColor[currentPlayer]} animateds flipInY`);
+    $(card2).addClass(`${playerColor[currentPlayer]} animateds flipInY`);
+ 
+    $(card1).children().removeClass().addClass("backCardImg");
+    $(card2).children().removeClass().addClass("backCardImg");
+    $(card1).removeClass("frontCard");
+    $(card2).removeClass("frontCard");
+    
+    
+},300);
+
 
 var waitToShowPlayerTurnScreen=setTimeout(playerTurnScreen,1000);
 
 }
+
+function sneakPeak(e){
+    if(players[currentPlayer].peakCount !==2 && !$(e.target).hasClass("clicked")){
+       
+        $(e.target).addClass("clicked");
+        $(e.target).css("opacity","0.3");
+      players[currentPlayer].playersPeaks[players[currentPlayer].peakCount]=e.target;
+      for(let x=0;x<$(".gameArea>.pickCard").length;x++){
+        flip($(".gameArea>.pickCard")[x],players[currentPlayer].pokemonShuffle[x]);
+        }
+      setTimeout(()=>{
+        for(let x=0;x<$(".gameArea>.pickCard").length;x++){
+            unFlipPeak($(".gameArea>.pickCard")[x],players[currentPlayer].pokemonShuffle[x].flipped);
+            }
+      },3000);
+      players[currentPlayer].peakCount++;
+                
+
+    }
+}
+
 function resetVariables(){
+    var x=0;
+    $(".Peak").removeClass("clicked");
+    $(".Peak").css("opacity",1);
     first_card_clicked=null;
     second_card_clicked=null;
     indexClick.firstClick=null;
     indexClick.secondClick=null;
     $(".accuracy").text(players[currentPlayer].accuracy);
 
+    while(players[currentPlayer].playersPeaks[x]!==null && x!==3){
+        $(players[currentPlayer].playersPeaks[x]).addClass("clicked");
+        $(players[currentPlayer].playersPeaks[x]).css("opacity","0.3");
+        x++;
+    }
     playerFirstTurn();
 }
 function playerFirstTurn(){

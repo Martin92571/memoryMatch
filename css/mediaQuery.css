@@ -108,6 +108,16 @@
         height: 31%;
         width: 15%;
     }
+    .backCardBlue {
+        border: 5px solid rgba(16,58,144);
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 20px rgba(16,58,144);
+    }
+    .backCardRed {
+        border: 5px solid rgba(204,0,0);
+        background-color: rgba(0,0,0,0.9);
+        box-shadow: 0px 0px 20px rgba(204,0,0);
+    }
     .GameTitle {
         height: 50%;
         background-size: 85%;
@@ -158,6 +168,7 @@
    .landscape{
       display: none;
     }
+   
 
 }
 @media only screen and (min-width: 500px) and (max-width: 1000px)and (orientation :landscape){
