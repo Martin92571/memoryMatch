@@ -25,12 +25,12 @@ var pokemons=[
 
 
 var players = [
-    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)},
-    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)}
+    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)},
+    { pokemon: null, name: "", health: 100,gamesWon:0,playersFirstTurn:true,peakCount:0,playersPeaks:[null,null,null],accuracy:0,match:0,attempts:0,pokemonShuffle:$.extend(true,[],pokemons)}
 ]
-var selectedPokemon=[{ class:"modalPokemon1",src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/arcanine.gif"},
-    {class:"modalPokemon2", src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/charizard.gif"},
-    {class:"modalPokemon3" ,src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/moltres.gif" }
+var selectedPokemon=[{ class:"battlePokemon1",src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/arcanine.gif"},
+    {class:"battlePokemon2", src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/charizard.gif"},
+    {class:"battlePokemon3" ,src:"https://img.pokemondb.net/sprites/black-white/anim/shiny/moltres.gif" }
 ];
 
 
@@ -285,7 +285,8 @@ function playerTurnScreen(){
         text:players[currentPlayer].name+"'s Turn"
     }); 
     var modalContainer=$("<div>",{class:"modalPlayerTurn"});
-    var innerModalContainer=$("<div>",{class:"modalPlayerPokemonBox "+selectedPokemon[players[currentPlayer].pokemon].class});
+    var modalClass="modal"+selectedPokemon[players[currentPlayer].pokemon].class.substring(6);
+    var innerModalContainer=$("<div>",{class:"modalPlayerPokemonBox "+ modalClass});
     $(modalContainer).append(modalPlayerText);
     modalContainer.append(innerModalContainer);
     $(".modal").append(modalContainer);
@@ -424,7 +425,7 @@ var waitToShowPlayerTurnScreen=setTimeout(playerTurnScreen,1000);
 }
 
 function sneakPeak(e){
-    if(players[currentPlayer].peakCount !==2 && !$(e.target).hasClass("clicked")){
+    if(players[currentPlayer].peakCount !==3 && !$(e.target).hasClass("clicked")){
        
         $(e.target).addClass("clicked");
         $(e.target).css("opacity","0.3");
@@ -474,11 +475,12 @@ function reset(){
     playAgain();
 }
 function playAgain(){
-
+ 
   players[currentPlayer].accuracy=0;
   players[currentPlayer].match=0;
   players[currentPlayer].attempts=0;
-
+  $(".Peak").removeClass("clicked");
+  $(".Peak").css("opacity","1");
     for(var x=0;x<players[currentPlayer].pokemonShuffle.length;x++){
                players[currentPlayer].pokemonShuffle[x].flipped=false;
     }
@@ -488,11 +490,16 @@ function playAgain(){
             $(".health1").text(players[currentPlayer].health=100);
             shufflePokemon(players[currentPlayer].pokemonShuffle);
             players[currentPlayer].playersFirstTurn=true;
+            for(var change1=0;change1<players[currentPlayer].playersPeaks.length;change1++){
+                players[currentPlayer].playersPeaks[change1]=null;
+            }
             currentPlayer++;
             playAgain();
-            break;
+            break
         case 1:
-
+            for(var change2=0;change2<players[currentPlayer].playersPeaks.length;change2++){
+                players[currentPlayer].playersPeaks[change2]=null;
+            }
             players[currentPlayer].playersFirstTurn=true;
             $(".health2").text(players[currentPlayer].health=100);
             shufflePokemon(players[currentPlayer].pokemonShuffle);

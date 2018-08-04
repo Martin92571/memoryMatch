@@ -1,6 +1,10 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
 body{
-    width:100vw;
-    height:100vh;
+   
     font-family: 'Press Start 2P', cursive;
     color:rgba(242, 242, 242);
     background:url("../images/pokemon.jpg");
@@ -102,24 +106,17 @@ body{
 }
 
 .modalPlayerTurn{
-    height: 85%;
-    position: absolute;
-    top:10%;
-    left:15%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width:70%;
     background-color:  rgba(0,0,0,1);
 }
 
-.modalPlayerPokemonBox{
-    position: absolute;
-    top: 7%;
-    left: 12%;
-    width: 70%;
-    height: 60%;
-}
 .modalPokemon1{
 
-    width: 70%;
+    width: 100%;
     height: 70%;
     background: url("../images/ArcanineGIF.gif");
     background-position: center;
@@ -129,7 +126,7 @@ body{
     display: inline-block;
 }
 .modalPokemon2{
-    width: 70%;
+    width: 100%;
     height: 70%;
     background: url("../images/CharizardGIF.gif");
     background-position: center;
@@ -139,7 +136,7 @@ body{
     display: inline-block;
 }
 .modalPokemon3{
-    width: 70%;
+    width: 100%;
     height: 70%;
     background: url("../images/MoltresGIF.gif");
     background-position: center;
@@ -148,13 +145,41 @@ body{
     opacity: 1;
     display: inline-block;
 }
-.modalPlayerText{
-    position: absolute;
+.battlePokemon1{
+
+    width: 80%;
+    height: 100%;
+    background: url("../images/ArcanineGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    opacity: 1;
+    display: inline-block;
+}
+.battlePokemon2{
+    width: 80%;
+    height: 100%;
+    background: url("../images/CharizardGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    opacity: 1;
+    display: inline-block;
+}
+.battlePokemon3{
     width: 100%;
+    height: 100%;
+    background: url("../images/MoltresGIF.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    opacity: 1;
+    display: inline-block;
+}
+
+.modalPlayerText{
+    font-size: 1.5em;
     text-align: center;
-    top: 0%;
-    left: -1%;
-    font-size: 46px;
 }
 
 .modalFlex{
@@ -165,9 +190,7 @@ body{
 }
 
 .playerWon{
-    top: 80%;
-    position: absolute;
-    left: 37%;
+    
 
 }
 .LeftGamePly{
@@ -335,10 +358,9 @@ body{
 }
 .content{
 
-    position: absolute;
-    width:100vw;
-    top:0;
-    right:0;
+   
+    width:101vw;
+    
     height:100vh;
 
 }
@@ -533,15 +555,15 @@ body{
 }
 
 .sneakPeak{
-    width: 35%;
+    width: 40%;
     height: 30%;
-    margin: -10px auto;
+    margin: -5px auto;
 }
 .Peak{
     width: 25%;
     height: 100%;
     background-image: url(../images/iconspokemon.png);
-    background-size: 100%;
+    background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
