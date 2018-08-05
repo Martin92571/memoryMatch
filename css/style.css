@@ -328,18 +328,19 @@ body{
     background-color:rgba(0,0,0,0.7);
     border-radius: 0.625em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .accuracyDiv{
     width: 100%;
-    position: absolute;
-    top: 15%;
-    font-size: 18px;
+    
+    font-size: 1.3em;
 }
 
 .buttonReset{
-    position: absolute;
-    top: 45%;
+    
     width: 100%;
 
 }
@@ -359,7 +360,7 @@ body{
 .content{
 
    
-    width:101vw;
+    width:100vw;
     
     height:100vh;
 
@@ -509,7 +510,7 @@ body{
 }
 
 .animateds {
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 700ms;
     animation-duration: 700ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -568,6 +569,11 @@ body{
     background-position: center;
     display: inline-block;
 }
+
+
+
+
+
 
 
 

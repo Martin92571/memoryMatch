@@ -118,12 +118,14 @@ function pickPlayerName(playerID){
     $(".modal_text").text(playerID + " what is your name?");
     $(".direction").text("Click Pokeball to continue...");
     $(".playerinput").removeClass("hide");
+    $(".inputItems").css("display","flex");
 }
 
 
 function pickPokemonModal(Player) {
     $(".modal_text").text(Player+" pick your pokemon");
     $(".direction").text("Select Your Pokemon");
+    $(".inputItems").css("display","none");
     $(".playerinput").addClass("hide");
     $(".pokemon-row").css("display","block");
 }
@@ -206,6 +208,9 @@ function about(){
     });
 }
 function pickCards(){
+if($(this).hasClass("animateds")){
+    return;
+}    
 if(indexClick.firstClick !==null&& indexClick.secondClick!==null){
     return;
 }
@@ -224,6 +229,7 @@ if(indexClick.firstClick !==null&& indexClick.secondClick!==null){
 
 }
 function firstCard(location){
+    
     indexClick.firstClick=parseInt($(".gameArea>.pickCard").index(location));
     first_card_clicked = players[currentPlayer].pokemonShuffle[indexClick.firstClick];
     if(players[currentPlayer].pokemonShuffle[indexClick.firstClick].flipped==true){
@@ -398,6 +404,9 @@ function unFlipPeak(flipback,flipTrueCheck){
             $(flipback).children().removeClass().addClass("backCardImg");
             $(flipback).removeClass("frontCard");
         };
+        setTimeout(()=>{
+            $(flipback).removeClass('animateds flipInY');
+        },750);
     }
 function unFlip() {
 first_card_clicked.flipped=false;
@@ -425,7 +434,7 @@ var waitToShowPlayerTurnScreen=setTimeout(playerTurnScreen,1000);
 }
 
 function sneakPeak(e){
-    if(players[currentPlayer].peakCount !==3 && !$(e.target).hasClass("clicked")){
+    if(players[currentPlayer].peakCount !==3 && !$(e.target).hasClass("clicked")|| !players[currentPlayer].playersFirstTurn){
        
         $(e.target).addClass("clicked");
         $(e.target).css("opacity","0.3");
@@ -493,6 +502,7 @@ function playAgain(){
             for(var change1=0;change1<players[currentPlayer].playersPeaks.length;change1++){
                 players[currentPlayer].playersPeaks[change1]=null;
             }
+            players[currentPlayer].peakCount=0;
             currentPlayer++;
             playAgain();
             break
@@ -503,6 +513,7 @@ function playAgain(){
             players[currentPlayer].playersFirstTurn=true;
             $(".health2").text(players[currentPlayer].health=100);
             shufflePokemon(players[currentPlayer].pokemonShuffle);
+            players[currentPlayer].peakCount=0;
             currentPlayer--;
             resetVariables();
             victory.pause();
