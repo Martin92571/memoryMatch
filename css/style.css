@@ -9,8 +9,7 @@ body{
     color:rgba(242, 242, 242);
     background:url("../images/pokemon.jpg");
     background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     text-transform: uppercase;
  
 }
@@ -57,8 +56,7 @@ body{
     background: url("../images/ArcanineGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 40% 40%;
-            background-size: 40%;
+    background-size: 40%;
     opacity:1;
     display:inline-block;
 }
@@ -73,8 +71,7 @@ body{
     background: url("../images/CharizardGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 70% 70%;
-            background-size: 70%;
+    background-size: 70%;
     opacity:1;
     display:inline-block;
 
@@ -86,8 +83,7 @@ body{
     background: url("../images/MoltresGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 90% 90%;
-            background-size: 90%;
+    background-size: 90%;
     opacity:1;
     display:inline-block;
 }
@@ -100,20 +96,16 @@ body{
     background-color:  rgba(0,0,0,1);
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            -webkit-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            -webkit-justify-content: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            -webkit-align-items: center;
             align-items: center;
 }
 .modal-content{
@@ -128,16 +120,13 @@ body{
     height: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            -webkit-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
-            -webkit-justify-content: space-evenly;
             justify-content: space-evenly;
     width:70%;
     background-color:  rgba(0,0,0,1);
@@ -150,8 +139,7 @@ body{
     background: url("../images/ArcanineGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 30% 30%;
-            background-size: 30%;
+    background-size: 30%;
     opacity: 1;
     display: inline-block;
 }
@@ -161,8 +149,7 @@ body{
     background: url("../images/CharizardGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 50% 50%;
-            background-size: 50%;
+    background-size: 50%;
     opacity: 1;
     display: inline-block;
 }
@@ -172,8 +159,7 @@ body{
     background: url("../images/MoltresGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 50% 50%;
-            background-size: 50%;
+    background-size: 50%;
     opacity: 1;
     display: inline-block;
 }
@@ -184,8 +170,7 @@ body{
     background: url("../images/ArcanineGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 30% 30%;
-            background-size: 30%;
+    background-size: 30%;
     opacity: 1;
     display: inline-block;
 }
@@ -195,8 +180,7 @@ body{
     background: url("../images/CharizardGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 50% 50%;
-            background-size: 50%;
+    background-size: 50%;
     opacity: 1;
     display: inline-block;
 }
@@ -206,8 +190,7 @@ body{
     background: url("../images/MoltresGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size: 50% 50%;
-            background-size: 50%;
+    background-size: 50%;
     opacity: 1;
     display: inline-block;
 }
@@ -220,19 +203,15 @@ body{
 .modalFlex{
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            -webkit-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            -webkit-justify-content: center;
             justify-content: center;
     -ms-flex-line-pack: center;
-        -webkit-align-content: center;
             align-content: center;
 }
 
@@ -287,8 +266,7 @@ body{
     border: none;
     cursor: pointer;
     outline: none;
-    -webkit-border-radius: 1.875em;
-            border-radius: 1.875em;
+    border-radius: 1.875em;
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
     transition: all .1s linear;
@@ -306,8 +284,7 @@ body{
     opacity: 95;
     background-color: yellow;
     background: url("../images/pokeball.png") no-repeat;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
     background-position: 0 1px;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
@@ -359,8 +336,7 @@ body{
     background-color: rgba(43,68,140,0.8);
     top:0.625em;
     left:0.313em;
-    -webkit-border-radius: 0.625em;
-            border-radius: 0.625em;
+    border-radius: 0.625em;
     width: 100%;
     height: 48%;
 }
@@ -374,20 +350,16 @@ body{
     width:100%;
     height: 48%;
     background-color:rgba(0,0,0,0.7);
-    -webkit-border-radius: 0.625em;
-            border-radius: 0.625em;
+    border-radius: 0.625em;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            -webkit-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
             justify-content: space-around;
 }
 
@@ -460,8 +432,7 @@ body{
 }
 .cards{
     position: relative;
-    -webkit-border-radius:0.625em;
-            border-radius:0.625em;
+    border-radius:0.625em;
     margin:0em 0.375em;
 
     display: inline-block;
@@ -494,8 +465,7 @@ body{
     background: url("../images/pokeball.png");
     width: 50%;
     height: 50%;
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -509,8 +479,7 @@ body{
     width:100%;
     height: 100%;
     border:2px solid rgba(0,0,0,0.9);
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
+    border-radius: 10px;
 
 }
 .hide{
@@ -520,65 +489,56 @@ body{
     background: url("../images/arcanine.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
 }
 .charzard{
     background: url("../images/charzard.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
 }
 .moltres{
     background:url("../images/moltres.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
 }
 .pickacu{
     background: url("../images/pickacu.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 95% 95%;
-            background-size: 95%;
+    background-size: 95%;
 }
 .squirtle{
     background: url("../images/Squirtle.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 95% 95%;
-            background-size: 95%;
+    background-size: 95%;
 }
 .sandshrew{
     background: url("../images/sandshrew.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 90% 90%;
-            background-size: 90%;
+    background-size: 90%;
 }
 .bulbasaur{
     background: url("../images/bulbasaur.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 95% 95%;
-            background-size: 95%;
+    background-size: 95%;
 
 }
 .psyduck{
     background: url("../images/Psyduck.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
 }
 .magikarp{
     background: url("../images/Magikarp.png");
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
+    background-size: 100%;
 }
 
 .animateds {
@@ -637,13 +597,11 @@ body{
     width: 25%;
     height: 100%;
     background-image: url(../images/iconspokemon.png);
-    -webkit-background-size: 95% 95%;
-            background-size: 95%;
+    background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
-
 
 
 
