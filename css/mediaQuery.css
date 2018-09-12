@@ -14,15 +14,26 @@
         background-color: rgba(0,0,0,1);
     }
     .modalFlex{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -webkit-justify-content: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
     .nameContainer{
         height: 12%;
     }
     .modalName{
-        background-size:100%;
+        -webkit-background-size:100% 100%;
+                background-size:100%;
         width:80%;
         margin:0 auto;
         height: 100%;
@@ -42,10 +53,23 @@
      
     }
     .inputItems{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .input-field{
      width:100%;
@@ -69,9 +93,19 @@
 
     }
     .mobile_BottomGameplay{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+        -webkit-justify-content: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         background-color: rgba(43,68,140,0.8);
         text-align: center;
         height: 16%;
@@ -114,16 +148,19 @@
     .backCardBlue {
         border: 5px solid rgba(16,58,144);
     background-color: rgba(0,0,0,0.9);
-    box-shadow: 0px 0px 20px rgba(16,58,144);
+    -webkit-box-shadow: 0px 0px 20px rgba(16,58,144);
+            box-shadow: 0px 0px 20px rgba(16,58,144);
     }
     .backCardRed {
         border: 5px solid rgba(204,0,0);
         background-color: rgba(0,0,0,0.9);
-        box-shadow: 0px 0px 20px rgba(204,0,0);
+        -webkit-box-shadow: 0px 0px 20px rgba(204,0,0);
+                box-shadow: 0px 0px 20px rgba(204,0,0);
     }
     .GameTitle {
         height: 50%;
-        background-size: 85%;
+        -webkit-background-size: 85% 85%;
+                background-size: 85%;
         margin:auto;
     }
     .stats{
@@ -181,9 +218,19 @@
    
  }
  .change{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -197,7 +244,8 @@
         color:#fff;
     }
     .modalName{
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+                background-size: 100%;
         margin:auto;
         width:65%;
     }
@@ -211,11 +259,25 @@
         margin: 0.3em;
     }
     .inputItems{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         
-        justify-content: space-around;
-        align-items: center;
+        -webkit-justify-content: space-around;
+        
+            -ms-flex-pack: distribute;
+        
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .playerinput {
         width: 100%;
@@ -243,15 +305,26 @@
     background-color: rgba(0,0,0,1);
 }
 .modalFlex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .nameContainer{
     height: 12%;
 }
 .modalName{
-    background-size:100%;
+    -webkit-background-size:100% 100%;
+            background-size:100%;
     width:80%;
     margin:0 auto;
     height: 100%;
@@ -271,10 +344,23 @@
  
 }
 .inputItems{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .input-field{
     width:70%;
@@ -298,9 +384,19 @@
     width:29%;
 }
 .mobile_BottomGameplay{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background-color: rgba(43,68,140,0.8);
     text-align: center;
     height: 16%;
@@ -342,7 +438,9 @@
 .GameTitle {
     height: 50%;
    
-    background-size: 75%;
+    -webkit-background-size: 75% 75%;
+   
+            background-size: 75%;
     margin: auto;
     width: 60%;
 }
@@ -399,7 +497,8 @@ bottom: 0;
     margin-top:0.5em;
  }
  .Peak{
-     background-size: 65%;
+     -webkit-background-size: 65% 65%;
+             background-size: 65%;
  }
 }
 
@@ -409,7 +508,9 @@ bottom: 0;
         width: 50%;
         height: 3em;
        
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+       
+                background-size: 100%;
     }
     .nameContainer{
         margin: auto;
@@ -421,20 +522,43 @@ bottom: 0;
         margin:auto;
         height: 10em;
         
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+        
+                background-size: 100%;
     }
     .playerinput{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-    align-content: center;
-    justify-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width:50%;
     margin: auto;
     }
     .inputItems{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 11em;
     }
 
@@ -447,7 +571,8 @@ bottom: 0;
         width: 15%;
         height: 100%;
         background-image: url(../images/iconspokemon.png);
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+                background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
         display: inline-block;
@@ -459,20 +584,24 @@ bottom: 0;
     }
     
     .pokemon1{
-        background-size:30%;
+        -webkit-background-size:30% 30%;
+                background-size:30%;
     }
     .pokemon2{
-        background-size:60%;
+        -webkit-background-size:60% 60%;
+                background-size:60%;
     }
     .pokemon3{
-        background-size:80%;
+        -webkit-background-size:80% 80%;
+                background-size:80%;
     }
     .modalPokemon1 {
         height: 100%;
     }
     .modalPokemon2 {
         height: 100%;
-        background-size: 40%;
+        -webkit-background-size: 40% 40%;
+                background-size: 40%;
     }
     .modalPokemon3 {
         height: 100%;
