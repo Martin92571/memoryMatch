@@ -6,7 +6,7 @@
 body{
    
     font-family: 'Press Start 2P', cursive;
-    color:rgba(242, 242, 242);
+    color:rgb(242, 242, 242);
     background:url("../images/pokemon.jpg");
     background-position: center;
     background-size: cover;
@@ -16,6 +16,7 @@ body{
 .pokemon-row{
   
     height: 30vh;
+    width:100%;
 
 
 
@@ -28,8 +29,8 @@ body{
     left:0;
     width:100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,1);
-    color:rgba(256,256,256,10);
+    background-color: rgb(0,0,0);
+    color:rgb(256,256,256);
 }
 /* .centerPokemonImg{
     position: absolute;
@@ -47,16 +48,16 @@ body{
     height: 50%;
 }
 .health{
-    margin-bottom: 20px;
+    margin-bottom: 0.8%;
 }
 .pokemon1{
     border:1px solid #f2f2f2;
-    width:30%;
+    width:31%;
     height:100%;
     background: url("../images/ArcanineGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: contain;
     opacity:1;
     display:inline-block;
 }
@@ -66,24 +67,25 @@ body{
 }
 .pokemon2{
     border:1px solid #f2f2f2;
-    width:30%;
+    width:31%;
     height:100%;
     background: url("../images/CharizardGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: contain;
     opacity:1;
     display:inline-block;
+    margin: 0% 0.5%;
 
 }
 .pokemon3{
     border:1px solid #f2f2f2;
-    width:30%;
+    width:31%;
     height:100%;
     background: url("../images/MoltresGIF.gif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: contain;
     opacity:1;
     display:inline-block;
 }
@@ -93,7 +95,7 @@ body{
     width:100%;
     height: 100%;
     display: block;
-    background-color:  rgba(0,0,0,1);
+    background-color:  rgb(0,0,0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -110,9 +112,9 @@ body{
 }
 .modal-content{
     
-    width:90%;
-   
-    background-color:  rgba(0,0,0,1);
+    width: 70%;
+    height: 90%;
+    background-color:  rgb(0,0,0);
 
 }
 
@@ -129,7 +131,7 @@ body{
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     width:70%;
-    background-color:  rgba(0,0,0,1);
+    background-color:  rgb(0,0,0);
 }
 
 .modalPokemon1{
@@ -165,22 +167,22 @@ body{
 }
 .battlePokemon1{
 
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url("../images/ArcanineGIF.gif");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: contain;
     opacity: 1;
     display: inline-block;
 }
 .battlePokemon2{
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url("../images/CharizardGIF.gif");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: contain;
     opacity: 1;
     display: inline-block;
 }
@@ -188,9 +190,9 @@ body{
     width: 100%;
     height: 100%;
     background: url("../images/MoltresGIF.gif");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: contain;
     opacity: 1;
     display: inline-block;
 }
@@ -201,28 +203,30 @@ body{
 }
 
 .modalFlex{
+    height: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
     -ms-flex-line-pack: center;
-            align-content: center;
+    align-items: center;
+
 }
 
-.playerWon{
-    
-
+.nameContainer{
+    height: 30%;
+    width: 100%;
 }
 .LeftGamePly{
-    width:33vw;
+    width:33%;
 
-    height:100vh;
+    height:100%;
 
     position: absolute;
     top:0;
@@ -230,35 +234,42 @@ body{
 }
 .modalName{
    
-    width:35%;
-    height:5em;
-    background: url("../images/memoryBattle35.png");
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background: url(../images/memoryBattle35.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
 }
 .playerinput{
 
-  
-    width:40%;
-    height:4.375em;
+    width: 55%;
+    height: 23%;
+    margin: -2% auto 0% auto;
+
    
 }
 .direction{
     width:100%;
-   
     text-align: center;
-    font-size: 1.250em
+    font-size: 3.4vh;
 }
 .modal_text{
     
-    width:100%;
+    width: 100%;
     text-align: center;
-    
-    font-size: 1.688em;
+    font-size: 3.7vh;
+    margin-top: -4vh;
 }
 .input-field {
-    width: 21.875em;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 45%;
+    margin: auto;
     display: inline-block;
-    color: rgba(0,0,0);
+    color: rgb(0,0,0);
     text-align: center;
     font-size: 1.125em;
     background-color: #f2f2f2;
@@ -275,34 +286,36 @@ body{
 
 
 
-
+.inputItems{
+    height: 100%;
+}
 .input-button{
-    width: 3.750em;
-    height: 4.375em;
+    width: 13%;
+    height: 45%;
     border: none;
-    text-indent: -9999px;
-    opacity: 95;
-    background-color: yellow;
-    background: url("../images/pokeball.png") no-repeat;
-    background-size: 100%;
-    background-position: 0 1px;
+    margin: 3% auto;
+    background: url(../images/pokeball.png) no-repeat;
+    background-size: contain;
+    background-position: center;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
+    cursor: pointer;
 
-    cursor: pointer; 
-    padding:2em;
-    display: inline-block;
    
 }
 .GameTitle{
-    margin:10px auto 0px auto;
-    width:65%;
-    height:5.000em;
+    margin:0.8% auto 0.8% auto;
     background: url("../images/memoryBattle30.png");
     background-repeat: no-repeat;
+    width: 50%;
+    background-position: center;
+    height: 15%;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 .stats{
+    font-size: 2.4vh;
     width: 100%;
     height: 75%;
     position: relative;
@@ -311,34 +324,30 @@ body{
     text-align: center;
     margin-bottom: 0.625em;
 }
-.Player1{
+
+.Player1,.Player2{
     text-align: center;
-    top:25%;
-    left:1.250em;
     width: 45%;
     height: 80%;
     display: inline-block;
-    position: absolute;
+    margin-left: 1.5%;
+    margin-top: 3vh;
+
+
 
 }
-.Player2{
-    position: absolute;
-    top:25%;
-    right:1.250em;
-    text-align: center;
-    width:45%;
-    height: 80%;
-    display: inline-block;
-}
+
 .NameGame{
 
     position: absolute;
+    background-color: rgb(43,68,140);
     background-color: rgba(43,68,140,0.8);
-    top:0.625em;
-    left:0.313em;
+    top: 0.625%;
+    left: 0.313em;
     border-radius: 0.625em;
     width: 100%;
     height: 48%;
+
 }
 .mobile_BottomGameplay{
     display:none;
@@ -349,7 +358,9 @@ body{
     left:0.313em;
     width:100%;
     height: 48%;
+    background-color:rgb(0,0,0);
     background-color:rgba(0,0,0,0.7);
+   
     border-radius: 0.625em;
     text-align: center;
     display: -webkit-box;
@@ -366,7 +377,7 @@ body{
 .accuracyDiv{
     width: 100%;
     
-    font-size: 1.3em;
+    font-size: 3vh;
 }
 
 .buttonReset{
@@ -401,7 +412,9 @@ body{
     display: block;
     width:100vw;
     height: 100vh;
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
+    
 }
 .aboutContent{
     position: absolute;
@@ -409,6 +422,7 @@ body{
     height:65%;
     top:20%;
     left:15%;
+    background-color: rgb(43,68,140);
     background-color: rgba(43,68,140,0.8);
     padding:60px;
     text-align: center;
@@ -425,7 +439,7 @@ body{
     width:67%;
     height:100%;
     overflow: hidden;
-    padding:1.250em 0em 0.313em 0.938em;
+    padding: 1.250% 0% 0.513% 0.938%;
 
 
 
@@ -433,29 +447,36 @@ body{
 .cards{
     position: relative;
     border-radius:0.625em;
-    margin:0em 0.375em;
+    margin: 0% 0.65%;
 
     display: inline-block;
     width:15%;
     background-color:none;
     height:32%;
+    cursor: pointer;
 
+}
+.backCardRed:hover,.backCardBlue:hover{
+    border:5px solid gold;
 }
 
 .opacity{
     opacity: 0.5;
 }
 .backCardBlue{
-    border:3px solid rgba(16,58,144);
+    border:3px solid rgb(16,58,144);
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.9);
-    -webkit-box-shadow: 0px 0px 10px rgba(16,58,144);
-            box-shadow: 0px 0px 10px rgba(16,58,144);
+    
+    -webkit-box-shadow: 0px 0px 10px rgb(16,58,144);
+            box-shadow: 0px 0px 10px rgb(16,58,144);
 }
 .backCardRed{
-    border:2px solid rgba(204,0,0);
+    border:2px solid rgb(204,0,0);
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.9);
-    -webkit-box-shadow: 0px 0px 10px rgba(204,0,0);
-            box-shadow: 0px 0px 10px rgba(204,0,0);
+    -webkit-box-shadow: 0px 0px 10px rgb(204,0,0);
+            box-shadow: 0px 0px 10px rgb(204,0,0);
 }
 .backCardImg{
 
@@ -470,7 +491,9 @@ body{
     background-repeat: no-repeat;
 }
 .frontCard{
-    background-color: rgba(242,183,5,.95);
+    background-color: rgb(242,183,5);
+    background-color: rgba(242,183,5,0.95);
+  
 }
 .frontCardImg{
     position: absolute;
@@ -478,7 +501,8 @@ body{
     left:0%;
     width:100%;
     height: 100%;
-    border:2px solid rgba(0,0,0,0.9);
+    border:2px solid rgb(0,0,0);
+    border:2px solid rgb(0,0,0,0.9);
     border-radius: 10px;
 
 }
@@ -495,50 +519,50 @@ body{
     background: url("../images/charzard.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
 }
 .moltres{
     background:url("../images/moltres.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
 }
 .pickacu{
     background: url("../images/pickacu.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    background-size: contain;
 }
 .squirtle{
     background: url("../images/Squirtle.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    background-size: contain;
 }
 .sandshrew{
     background: url("../images/sandshrew.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: contain;
 }
 .bulbasaur{
     background: url("../images/bulbasaur.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    background-size: contain;
 
 }
 .psyduck{
     background: url("../images/Psyduck.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
 }
 .magikarp{
     background: url("../images/Magikarp.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
 }
 
 .animateds {
@@ -589,19 +613,29 @@ body{
 }
 
 .sneakPeak{
-    width: 40%;
-    height: 30%;
-    margin: -5px auto;
+
+    
+     width: 50%;
+    height: 30%; 
+    margin: 0.5% auto;
 }
 .Peak{
-    width: 25%;
+    width: 24%;
     height: 100%;
     background-image: url(../images/iconspokemon.png);
-    background-size: 95%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
+.Peak:hover{
+  cursor: pointer;
+}
+#btn-resize{
+    font-size: 2.8vh;
+    padding: 1.5vh 2.4vh;
+}
+
 
 
 

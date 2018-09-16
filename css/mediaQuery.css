@@ -1,6 +1,6 @@
-@media only screen and (max-width: 700px) and (orientation :portrait) {
+@media only screen and (max-width: 769px)  {
     body{
-        width: 100vw;
+        
         height: 100vh;
         color:#fff;
     }
@@ -11,23 +11,9 @@
     .modal-content {
         width: 90%;
         height: 90%;
-        background-color: rgba(0,0,0,1);
+        background-color: rgb(0,0,0);
     }
-    .modalFlex{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: space-evenly;
-        -webkit-justify-content: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-    }
+    
     .nameContainer{
         height: 12%;
     }
@@ -44,12 +30,12 @@
     }
     .direction{
         font-size:0.91em;
-        margin-top:5px;
+        margin-top:0.4%;
         color:#fff;
     }
     .playerinput{
      width:100%;
-     height: 8.375em;
+     height: 20%;
      
     }
     .inputItems{
@@ -76,7 +62,7 @@
      
     }
     .input-button{
-        margin-top:20px;
+        margin-top:1.5%;
         
 
     }
@@ -89,9 +75,7 @@
     .pokemon3{
         width:29%;
     }
-    .modalPlayerText{
-
-    }
+   
     .mobile_BottomGameplay{
         display: -webkit-box;
         display: -webkit-flex;
@@ -106,21 +90,23 @@
         -webkit-justify-content: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
-        background-color: rgba(43,68,140,0.8);
+        background-color: rgb(43,68,140);
+        opacity: 0.8;
         text-align: center;
-        height: 16%;
+        height: 17.45%;
       
         width: 100%;
     }
     .NameGame{
-        position: relative;
+        left:0%;
+        height: 100%;
     }
     .LeftGamePly{
         position: relative;
-        height: 28%;
+        height: 27.5%;
         width: 100%;
-        margin-bottom: 0.4em;
-        background-color: rgba(43,68,140,0.8);
+        background-color: rgb(43,68,140);
+        opacity: 0.8;
     }
     .BottomGameplay{
         display: none;
@@ -132,7 +118,7 @@
         height: 55%;
         overflow: visible;
         margin:auto;
-       padding:0.2em 0em 0.013em 0.938em;
+       
        
     }
     .content{
@@ -141,45 +127,39 @@
         height: 100%;
     }
     .cards{
-        margin: 0em 0.095em;
+        margin: 0% 0.45%;
         height: 31%;
-        width: 15%;
+        width: 15.7%;
+    
     }
     .backCardBlue {
-        border: 5px solid rgba(16,58,144);
-    background-color: rgba(0,0,0,0.9);
-    -webkit-box-shadow: 0px 0px 20px rgba(16,58,144);
-            box-shadow: 0px 0px 20px rgba(16,58,144);
+        border: 5px solid rgb(16,58,144);
+    background-color: rgb(0,0,0);
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 20px rgb(16,58,144);
+            box-shadow: 0px 0px 20px rgb(16,58,144);
     }
     .backCardRed {
-        border: 5px solid rgba(204,0,0);
-        background-color: rgba(0,0,0,0.9);
-        -webkit-box-shadow: 0px 0px 20px rgba(204,0,0);
-                box-shadow: 0px 0px 20px rgba(204,0,0);
+        border: 5px solid rgb(204,0,0);
+        background-color: rgb(0,0,0);
+        opacity: 0.9;
+        -webkit-box-shadow: 0px 0px 20px rgb(204,0,0);
+                box-shadow: 0px 0px 20px rgb(204,0,0);
     }
-    .GameTitle {
-        height: 50%;
-        -webkit-background-size: 85% 85%;
-                background-size: 85%;
-        margin:auto;
-    }
+    
     .stats{
-        font-size: 0.6em;
+        font-size: 1.9vh;
     }
     .centerPokemonImg{
     bottom: 0;
     }
-    .Player1{
-        height: 100%;
+    .Player1,.Player2{
+        height: 80%;
+        margin-left:3%;
     }
-    .Player2{
-        height: 100%;
-    }
-    .pokemonAnimation1{
-        height: 100%;
-    }
-    .pokemonAnimation2{
-        height: 100%;
+   
+    .pokemonAnimation1, .pokemonAnimation2{
+        height: 55%;
     }
     .health{
         margin-bottom: 0;
@@ -194,7 +174,7 @@
         height: 100%;
     }
     .mobile_accuracyDiv{
-        font-size: 0.8em;
+        font-size: 2.2vh;
     }
     .reset{
         font-size: .375rem;
@@ -208,419 +188,73 @@
    .landscape{
       display: none;
     }
+    .Peak{
+        width:20%;
+    }
+    .GameTitle{
+        height: 20%;
+    }
+    .Gameplayed{
+        margin-bottom: -3.5vh;
+    }
+    #btn-resize{
+        font-size: 1.5vh;
+    padding: .5vh 1.4vh;
+    }
+    .sneakPeak{
+        margin: 0 auto;
+    }
    
 
 }
-@media only screen and (min-width: 500px) and (max-width: 1000px)and (orientation :landscape){
-.landscape{
-    display: block;
-    z-index: 1100;
+@media only screen and (max-width: 380px) {
+.stats{
+    font-size: 1.54vh;
+   }
    
- }
- .change{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
- }
-
-
-
-}
+}   
 @media only screen and (max-height: 380px) {
     body{
         color:#fff;
     }
     .modalName{
-        -webkit-background-size: 100% 100%;
-                background-size: 100%;
+      
         margin:auto;
-        width:65%;
+        width:55%;
     }
     .modal_text {
        
-        font-size: 0.688em;
+        font-size: 4.7vh;
+        margin: 0% 0% 2% 0%;
     }
     .input-field{
-        padding: 0.5em 1.4em;
-        width: 15.875em;
-        margin: 0.3em;
+        height: 30%;
+        width: 100%;
+        margin: 2% auto;
     }
     .inputItems{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        
-        -webkit-justify-content: space-around;
-        
-            -ms-flex-pack: distribute;
-        
-                justify-content: space-around;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+        width: 90%;
+        margin: 0 auto;
     }
     .playerinput {
-        width: 100%;
-        height: 6.375em;
-        margin-bottom: 1em;
+        width: 50%;
+        height: 45%;
+
+        margin: -1% auto 0% auto;
+        
     }
     .direction{
-        font-size: 0.5em;
+        font-size: 3.5vh;
         margin-top: 0.7em;
     }
+    
   
 }
-@media only screen and (max-width: 1100px) and (min-width: 700px) and (orientation :portrait) {
-   body{
-       color:#fff;
-   }
- 
-.modalFlex {
-    
-    height: 100%;
-}
-.modal-content {
-    width: 90%;
-    height: 90%;
-    background-color: rgba(0,0,0,1);
-}
-.modalFlex{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-}
-.nameContainer{
-    height: 12%;
-}
-.modalName{
-    -webkit-background-size:100% 100%;
-            background-size:100%;
-    width:80%;
-    margin:0 auto;
-    height: 100%;
-}
-.modal_text{
-  font-size: 1.51em;
-  color:#fff;
-}
-.direction{
-    font-size:1.51em;
-    margin-top:5px;
-    color:#fff;
-}
-.playerinput{
- width:100%;
- height: 8.375em;
- 
-}
-.inputItems{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-.input-field{
-    width:70%;
-    padding:1.2em 1.4em;
-    
-}
-.input-button{
-    margin-top:20px;
-    width: 4.75em;
-    height: 5.375em;
-    
 
-}
-.pokemon1{
- width:29%;
-}
-.pokemon2{
-    width:30%;
-}
-.pokemon3{
-    width:29%;
-}
-.mobile_BottomGameplay{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    background-color: rgba(43,68,140,0.8);
-    text-align: center;
-    height: 16%;
-    margin-top: 5px;
-    width: 100%;
-}
-.NameGame{
-    position: relative;
-}
-.LeftGamePly{
-    position: relative;
-    height: 28%;
-    width: 100%;
-    margin-bottom: 0.4em;
-    background-color: rgba(43,68,140,0.8);
-}
-.BottomGameplay{
-    display: none;
-}
-.gameArea {
-    position: relative;
-    width: 100%;
-    height: 55%;
-    overflow: visible;
-    margin: auto;
-    padding: 1.2em 0em 0.013em 2.938em;
-   
-}
-.content{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-.cards{
-    margin: 0em 0.095em;
-    height: 31%;
-    width: 15%;
-}
-.GameTitle {
-    height: 50%;
-   
-    -webkit-background-size: 75% 75%;
-   
-            background-size: 75%;
-    margin: auto;
-    width: 60%;
-}
-.stats{
-    font-size: 1.1em;
-    margin-top: 0.5em;
-}
-.centerPokemonImg{
-bottom: 0;
-}
-.Player1{
-    height: 100%;
-}
-.Player2{
-    height: 100%;
-}
-.pokemonAnimation1{
-    height: 91%;
-}
-.pokemonAnimation2{
-    height: 91%;
-}
-.health{
-    margin-bottom: 0;
-}
-.modalPokemon1 {
-    height: 100%;
-}
-.modalPokemon2 {
-    height: 100%;
-}
-.modalPokemon3 {
-    height: 100%;
-}
-.mobile_accuracyDiv{
-    padding-top: 10px;
-    font-size: 1.5em;
-    margin-top: 0.575em;
-
-}
-.reset{
-    font-size: .75rem;
-}
-.toggleSound{
-    font-size: .575rem;
-}
-.mobile_buttonReset{
-    display: inline-block;
-}
-.landscape{
-  display: none;
-}
-.mobile_about{
-    margin-top:0.5em;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    .pokemon-row{
+        height: inherit;
+    }
+    
  }
- .Peak{
-     -webkit-background-size: 65% 65%;
-             background-size: 65%;
- }
-}
-
-@media only screen and (min-width: 1100px){
-    .GameTitle {
-       
-        width: 50%;
-        height: 3em;
-       
-        -webkit-background-size: 100% 100%;
-       
-                background-size: 100%;
-    }
-    .nameContainer{
-        margin: auto;
-         width: 100%;
-    }
-    
-    .modalName {
-        width: 40%;
-        margin:auto;
-        height: 10em;
-        
-        -webkit-background-size: 100% 100%;
-        
-                background-size: 100%;
-    }
-    .playerinput{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width:50%;
-    margin: auto;
-    }
-    .inputItems{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 11em;
-    }
-
-    .sneakPeak{
-        width: 100%;
-        height: 30%;
-        margin: -5px auto;
-    }
-    .Peak{
-        width: 15%;
-        height: 100%;
-        background-image: url(../images/iconspokemon.png);
-        -webkit-background-size: 100% 100%;
-                background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: inline-block;
-    }
-
-   .modalPlayerTurn{
-      height: 90%;
-      width: 80%;
-    }
-    
-    .pokemon1{
-        -webkit-background-size:30% 30%;
-                background-size:30%;
-    }
-    .pokemon2{
-        -webkit-background-size:60% 60%;
-                background-size:60%;
-    }
-    .pokemon3{
-        -webkit-background-size:80% 80%;
-                background-size:80%;
-    }
-    .modalPokemon1 {
-        height: 100%;
-    }
-    .modalPokemon2 {
-        height: 100%;
-        -webkit-background-size: 40% 40%;
-                background-size: 40%;
-    }
-    .modalPokemon3 {
-        height: 100%;
-    }
-    .modal-content{
-        height: 90%;
-    }
-    .modalFlex{
-        height: 70%;
-        margin-top: 4em;  
-    }
-    .modal_text{
-        margin-bottom: 1em;
-    }
-    .playerinput{
-        height: 30%;
-    }
-    .direction{
-        margin-top: 2em;
-    }
-
-}
