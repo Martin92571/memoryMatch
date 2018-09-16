@@ -473,9 +473,7 @@ function unFlip() {
 function sneakPeak(e) {
   if (
     (players[currentPlayer].peakCount !== 3 &&
-      !$(e.target).hasClass("clicked")) ||
-    !players[currentPlayer].playersFirstTurn
-  ) {
+      !$(e.target).hasClass("clicked"))) {
     $(e.target).addClass("clicked");
     $(e.target).css("opacity", "0.3");
     players[currentPlayer].playersPeaks[players[currentPlayer].peakCount] =
