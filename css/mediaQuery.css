@@ -14,55 +14,43 @@
         background-color: rgb(0,0,0);
     }
     
-    .nameContainer{
-        height: 12%;
+    .nameContainer {
+        height: 20%;
     }
     .modalName{
-        -webkit-background-size:100% 100%;
-                background-size:100%;
+        -webkit-background-size:contain;
+                background-size:contain;
         width:80%;
         margin:0 auto;
         height: 100%;
     }
     .modal_text{
-      font-size: 0.91em;
+      font-size: 3vh;
       color:#fff;
     }
     .direction{
-        font-size:0.91em;
+        font-size:2.7vh;
         margin-top:0.4%;
         color:#fff;
     }
     .playerinput{
      width:100%;
-     height: 20%;
+     height: 30%;
      
     }
     .inputItems{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+        width: 76%;
+        height: 100%;
+        margin: 0% auto;
     }
     .input-field{
      width:100%;
+     height: 35%;
      
     }
     .input-button{
         margin-top:1.5%;
+        width:20%;
         
 
     }
@@ -210,46 +198,48 @@
 @media only screen and (max-width: 380px) {
 .stats{
     font-size: 1.54vh;
+
    }
+   .input-button{
+       height: 45%;
+       margin: 3% auto 0%;
+       width: 20%;
+   }
+   .input-field{
+       height: 30%;
+   }
+   .playerinput{
+       height: 30%;
+   }
+   .pokemon1,.pokemon2,.pokemon3{
+       width: 28%;
+   }
+   .nameContainer {
+    height: 25%;
+}
+   .modalName {
+    width: 100%;
+   }
+    
+   
+
    
 }   
-@media only screen and (max-height: 380px) {
-    body{
-        color:#fff;
-    }
-    .modalName{
-      
-        margin:auto;
-        width:55%;
+@media only screen and (max-width: 380px) and (max-height:380px) {
+    .direction {
+        font-size: 2.7vh;
     }
     .modal_text {
+        font-size: 3.5vh;
        
-        font-size: 4.7vh;
-        margin: 0% 0% 2% 0%;
-    }
-    .input-field{
-        height: 30%;
-        width: 100%;
-        margin: 2% auto;
-    }
-    .inputItems{
-        width: 90%;
-        margin: 0 auto;
     }
     .playerinput {
-        width: 50%;
-        height: 45%;
-
-        margin: -1% auto 0% auto;
-        
+        height: 35%;
     }
-    .direction{
-        font-size: 3.5vh;
-        margin-top: 0.7em;
-    }
+       
     
-  
-}
+       
+    }   
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS */
